@@ -42,6 +42,7 @@ Temporary Items
 .apdisk
 
 ### Ruby ###
+debug.log
 *.gem
 *.rbc
 /.config
