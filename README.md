@@ -5,16 +5,16 @@ Test pokédex website, with capybara framework automation, using rspec, site_pri
 
 ```Ruby 2.5```
 Install bundler using command line:
-
 ```gem install bundler```
+and execute in project ```bundle install``` to download all dependences of gems
 
-and execute in project ```bundle install```
-
-If in mac please install chromedriver using command line:
-
-```brew install chromedriver```
-
-or Windows download chromedriver on https://chromedriver.storage.googleapis.com/index.html?path=2.46/ and unzip in c:Windows 
+#### Drivers
+- Download chromedriver:[Chrome Driver](https://chromedriver.storage.googleapis.com/index.html?path=2.46/)   
+- Mac:
+sudo nano: ```/etc/paths```
+```/usr/loca/bin/chromedriver```
+- Windows:
+move to ```C:/Windows```
 
 
 ### How Works
