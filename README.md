@@ -1,5 +1,5 @@
 ### Pokedex Project
-Test pokédex website, with capybara framework automation
+Test pokédex website, with capybara framework automation, using rspec, site_prism, selenium_webdriver and cucumber.
 
 ### Pre-requirements
 
