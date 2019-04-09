@@ -3,7 +3,7 @@
   login_page = LoginPage.new
   
   Given("open pokedex") do
-    visit 'https://www.pokemon.com/us/pokedex/'
+    visit ""
     login_page.dismiss_cookie.click
   end
 
@@ -20,9 +20,9 @@
   end
 
   When("insert user name {string} and wrong password") do |username|
-    find('#username').set username
-    find('#password').set "1234567"
-    click_on 'Sign In'
+    login_page.username.set username
+    login_page.password.set "123456"
+    login_page.log_in.click
   end
   
   When("realize logoff") do
