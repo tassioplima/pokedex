@@ -1,0 +1,12 @@
+node('master') {
+    stage('Install Bundler') {
+        sh '''
+        gem install bundler
+        '''
+     }
+     stage('Gem dependeses') {
+        sh '''
+        install bundle
+        '''
+     }
+}
