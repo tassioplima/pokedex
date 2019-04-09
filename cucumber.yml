@@ -1,0 +1,6 @@
+#YML
+
+default: -p chrome -p dev
+html_report: --format pretty --format html --out=features_report.html
+chrome: BROWSER=chrome
+dev: ENVIRONMENT_TYPE=dev
