@@ -1,4 +1,7 @@
 node('master') {
+   stage('Git checkout') {
+        checkout([$class: 'GitSCM', branches: [[name: '*/develop']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '55ecb46e-2b03-4c4a-9cee-9eaa5ecb7020', url: 'https://github.com/tassioplima/pokedex.git']]])
+     }
     stage('Install Bundler') {
         sh '''
         gem install bundler
