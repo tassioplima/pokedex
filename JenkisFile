@@ -1,0 +1,7 @@
+node('master') {
+    stage('Gems dependences') {
+        sh '''
+        gem install bundler
+        '''
+     }
+}
