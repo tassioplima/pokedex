@@ -12,4 +12,9 @@ node('master') {
         install bundle
         '''
      }
+     stage('Run test') {
+        sh '''
+        cucumber 
+        '''
+     }
 }
