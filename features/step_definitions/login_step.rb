@@ -1,9 +1,10 @@
-  #----------Given----------
-
-  login_page = LoginPage.new
+login_page = LoginPage.new
   
+  #----------Given----------#
+
   Given("open pokedex") do
     visit ""
+    login_page.wait_until_dismiss_cookie_visible
     login_page.dismiss_cookie.click
   end
 
@@ -11,7 +12,7 @@
     login_page.login.click
   end
 
-  #----------When----------
+  #----------When----------#
   
   When("insert user name {string} and password") do |username|
     login_page.username.set username
@@ -29,7 +30,7 @@
     click_on 'Log Out'
   end
   
-  #----------Then----------
+  #----------Then----------#
 
   Then("we are logged") do
     expect(page).to have_content "Tassioplima"
