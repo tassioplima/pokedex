@@ -27,3 +27,6 @@ Or unit tags/test
 
 ```cucumber -t @tags```
 
+customize running 
+
+```cucumber -t @tags```
